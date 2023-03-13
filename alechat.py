@@ -1,7 +1,7 @@
 #导入openai 
 import openai
 # 导入用户key
-openai.api_key = "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"
+openai.api_key = ""
 
 conversation = []
 
@@ -13,7 +13,7 @@ def generate_answer(messages):
         temperature=0.7,
         presence_penalty=0.6,
         frequency_penalty=0.5,
-        max_tokens=4000
+        max_tokens=1024
 
     )
     res_msg = completion.choices[0].message
