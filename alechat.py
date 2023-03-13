@@ -18,7 +18,7 @@ def generate_answer(messages):
     )
     res_msg = completion.choices[0].message
     return res_msg["content"].strip()
-
+# test
 
 if __name__ == '__main__':
     # 维护一个列表用于存储多轮对话的信息
